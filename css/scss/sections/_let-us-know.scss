@@ -1,0 +1,46 @@
+.let-us-footer{
+    margin-top: 120px;
+    padding-top: 50px;
+    .let-us-know{
+        display: flex;
+        .contact-portrait{
+            .dots{
+                position: absolute;
+                top: 35;
+                left: 350;
+            }
+            .green-slope{
+                position: absolute;
+                top: 265;
+            }
+            .portrait{
+                position: relative;
+            }
+        }
+        .contact-info{
+            margin-left: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                margin-bottom: 20px;
+            }
+            .icon-row{
+                display: flex;
+                gap:15px;
+                margin-top: 20px;
+                i{
+                    color: var(--color-secondary);
+                }
+                .contact-type{
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+                .info-row{
+                    font-style: italic;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
