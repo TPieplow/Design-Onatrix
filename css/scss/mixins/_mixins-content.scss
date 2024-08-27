@@ -1,0 +1,23 @@
+@mixin flex-content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin grid-content {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include desktop {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @include ultra-wide {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

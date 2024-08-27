@@ -1,0 +1,6 @@
+.design-palette .container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1920px;
+}

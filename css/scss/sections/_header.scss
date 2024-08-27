@@ -1,0 +1,67 @@
+header {
+    .top-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        padding: .7rem;
+        
+        .address-info {
+            p{
+                margin: 0;
+            }
+        }
+        
+        .social-icons {
+            display: flex;
+            align-items: center; 
+            list-style: none; 
+        
+            a {
+                position: relative;
+                text-decoration: none;
+                margin-right: 15px;
+        
+                i {
+                    font-size: 1.5rem; 
+                }
+        
+                // Border mellan ikonerna
+                &:not(:last-child)::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%; 
+                    transform: translateY(-50%);
+                    height: 3.4rem; 
+                    width: 1px; 
+                    background-color: currentColor; 
+                    right: -.6rem; 
+                }
+                
+                // Border innan ikon vänster
+                &:first-child::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    height: 3.4rem;
+                    width: 1px;
+                    background-color: currentColor; 
+                    left: -.6rem; 
+                }
+                
+                // Border innan ikon vänster
+                &:last-child::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%; 
+                    transform: translateY(-50%);
+                    height: 3.4rem; 
+                    width: 1px;
+                    background-color: currentColor; 
+                    right: -.6rem; 
+                }
+            }
+        }
+    }
+}
