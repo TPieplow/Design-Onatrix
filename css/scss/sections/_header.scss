@@ -1,67 +1,130 @@
 header {
     .top-header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 0;
-        padding: .7rem;
-        
-        .address-info {
-            p{
-                margin: 0;
+        .container {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            padding: .7rem 0;
+            
+            @include desktop {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0;
+                padding: .7rem 0;
+            }
+            
+            .address-info {
+                p{
+                    margin: 0;
+                }
+            }
+            
+            .social-icons {
+                display: flex;
+                align-items: center; 
+                list-style: none; 
+                
+                a {
+                    position: relative;
+                    text-decoration: none;
+                    margin-right: 15px;
+                    
+                    i {
+                        font-size: 1.5rem; 
+                    }
+                    
+                    // Border mellan ikonerna
+                    &:not(:last-child)::after {
+                        content: "";
+                        position: absolute;
+                        top: 50%; 
+                        transform: translateY(-50%);
+                        height: 3.4rem; 
+                        width: 1px; 
+                        background-color: currentColor; 
+                        right: -.6rem; 
+                    }
+                    
+                    // Border innan ikon vänster
+                    &:first-child::before {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        height: 3.4rem;
+                        width: 1px;
+                        background-color: currentColor; 
+                        left: -.6rem; 
+                    }
+                    
+                    // Border innan ikon vänster
+                    &:last-child::after {
+                        content: "";
+                        position: absolute;
+                        top: 50%; 
+                        transform: translateY(-50%);
+                        height: 3.4rem; 
+                        width: 1px;
+                        background-color: currentColor; 
+                        right: -.6rem; 
+                    }
+                }
             }
         }
-        
-        .social-icons {
+    }
+    
+    .nav-container {
+        .container {
             display: flex;
-            align-items: center; 
-            list-style: none; 
-        
-            a {
-                position: relative;
-                text-decoration: none;
-                margin-right: 15px;
-        
-                i {
-                    font-size: 1.5rem; 
+            flex-direction: row;
+            padding: 20px 0;
+            
+
+            
+            @include desktop {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                
+                .logo-container {
+                    display: inline-block;
                 }
-        
-                // Border mellan ikonerna
-                &:not(:last-child)::after {
-                    content: "";
-                    position: absolute;
-                    top: 50%; 
-                    transform: translateY(-50%);
-                    height: 3.4rem; 
-                    width: 1px; 
-                    background-color: currentColor; 
-                    right: -.6rem; 
+            }
+            
+            .logo-container {
+                margin-right: auto;
+            }
+            
+            .nav-bar {
+                padding-top: 10px;
+                display: none;
+                
+                @include tablet {
+                    display: block;
+                }
+
+                @include desktop{
+                    display: block;
                 }
                 
-                // Border innan ikon vänster
-                &:first-child::before {
-                    content: "";
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    height: 3.4rem;
-                    width: 1px;
-                    background-color: currentColor; 
-                    left: -.6rem; 
+                .nav-link {
+                    cursor: pointer;
+                    font-weight: 600;
+                    margin-right: 25px;
                 }
-                
-                // Border innan ikon vänster
-                &:last-child::after {
-                    content: "";
-                    position: absolute;
-                    top: 50%; 
-                    transform: translateY(-50%);
-                    height: 3.4rem; 
-                    width: 1px;
-                    background-color: currentColor; 
-                    right: -.6rem; 
+            }
+            
+            .magnifying-glass {
+                position: absolute;
+                top: 1.5rem;
+                right: 1rem;
+                font-size: 1.4em;
+
+                @include tablet {
+                    top: 1.7rem;
+                    right: -.4rem;
                 }
             }
         }
+        
     }
 }

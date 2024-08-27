@@ -1,0 +1,28 @@
+.our-story {
+    padding-top: 110px;
+
+    .container {
+        @include flex-content-center;
+        text-align: center;
+
+        .section-title {
+            z-index: 1;
+            margin-bottom: 90px;
+
+            .ingress {
+                margin-bottom: 30px;
+            }
+        }
+        .img-staff {
+            z-index: 1;
+            object-fit: cover;
+            max-width: 100%;
+        }
+
+        .img-globe {
+            position: absolute;
+            object-fit: cover;
+            max-width: 100%;
+        }
+    }
+}

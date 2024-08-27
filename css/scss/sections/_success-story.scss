@@ -1,0 +1,43 @@
+.success-story {
+    padding-top: 90px;
+    height: 100vh;
+    margin-bottom: 100px;
+    
+    .container {
+        @include flex-content-center;
+        
+        .section-title {
+            text-align: center;
+            z-index: 1;
+            
+            h2 {
+                margin: 0;
+            }
+        }
+        
+        .data-wrapper {
+            @include grid-content;
+            margin-bottom: 3rem;
+            
+            .data {
+                text-align: center;
+                
+                h3 {
+                    margin: 0;
+                    font-size: 100px;
+                }
+            }
+        }
+        
+        .img-globe {
+            max-width: 100%;
+            position: absolute;
+            top: 0;
+            object-fit: cover;
+        }
+        
+        .img-staff-meeting {
+            z-index: 1;
+        }
+    }
+}
