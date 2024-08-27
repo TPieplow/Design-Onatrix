@@ -1,0 +1,116 @@
+.our-projects {
+    padding-bottom: 100px;
+    padding-top: 510px;
+
+    @include flex-content-center;
+    
+    @include tablet {
+        padding-top: 310px;
+    }
+
+    @include small-desktop {
+        padding-top: 290px;
+    }
+    
+    @include desktop {
+        padding-top: 140px;
+    }
+
+
+
+    
+    .section-title {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+
+        @include tablet {
+            text-align: left;
+        }
+
+        @include small-desktop {
+            text-align: center;
+        }
+
+        @include desktop {
+            text-align: left;
+        }
+
+        h2 {
+            margin: 0;
+        }
+    }
+    
+    .project-wrapper {
+
+        @include tablet {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        @include desktop {
+            display: flex;
+        }
+        
+        
+        .project-card {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 50px;
+
+            @include tablet {
+                margin-bottom: 0;
+            }
+            
+            img {
+                max-width: 100%;
+                object-fit: cover;
+            }
+            
+            .card-footer {
+                display: block;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 10px;
+                
+                transition: height 0.3s ease, background-color 0.3s ease;
+                
+                h5, p {
+                    color: var(--color-light);
+                    padding-left: 10px;
+                    margin: 0;
+                }
+
+                &::after {
+                    position: absolute;
+                    content: '>';
+                    top: 5px;
+                    right: 15px;
+                    font-size: 4rem;
+                    color: var(--color-accent);
+                    opacity: 0;
+                    transform: opacity 0.3s ease;
+                    padding-right: 10px;
+                }
+
+                &:hover  {
+                    height: 100px; 
+                    background-color: var(--color-primary);
+                    padding-top: 26px;
+                    
+                    h5 {
+                        color: var(--color-accent)
+                    }
+
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.hero {
+    position: relative;
+
+    .background-image {
+        img {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            max-width: 100%;
+        }
+    }
+    
+    .container {
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            text-align: flex-start;
+            margin-top: 30px;
+
+            @include tablet {
+                bottom: auto;
+                width: 90%;
+                align-items: center;
+                text-align: center;
+            }
+
+            @include desktop{
+                position: absolute;
+                bottom: 110px;
+                width: 560px;
+                align-items: flex-start;
+                text-align: left;
+                margin-top: 0;
+            }
+            
+            h1 {
+                line-height: 1;
+                margin: 0 0 35px 0;
+            }
+            
+            .ingress {
+                line-height: 1.8;
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+}
