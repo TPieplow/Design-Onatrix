@@ -1,0 +1,105 @@
+.about-home {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @include desktop {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+        }
+        .section-title {
+
+            h2 {
+                margin: 0;
+            }
+            
+            .quote {
+                font-style: italic;
+                font-size: 1.3rem;
+            }
+            
+            .ingress {
+                margin-bottom: 20px;
+            }
+            
+            img {
+                
+            } 
+            
+            .signature {
+                
+            }
+        }
+        
+        .call-back-form {
+
+            @include desktop {
+                position: absolute;
+                top: -270;
+                right: 60;
+            }
+
+            margin-top: 80px;
+            box-shadow: 0 4px 10px 10px rgba(0, 0, 0, 0.1);
+            height: 600px;
+            width: 480px;
+            
+            .form-header {
+                padding: 5px 15px;
+            }
+            
+            .form-content {
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                gap: 10px;
+                padding: 15px 10px;
+                
+                .form-ingress {
+                    padding: 0 10px;
+                }
+                
+                input {
+                    margin: 8px 5px;
+                    padding: 15px 15px; 
+                    font-size: 1rem; 
+                    border: 1px solid #ccc; 
+                    border-radius: 4px; 
+                    background-color: #fff; 
+                    color: #333; 
+                    outline: none; 
+                    
+                    &:focus {
+                        border-color: var(--color-primary); 
+                        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); // Lägg till en liten skugga för att markera fokusering
+                    }
+                }
+                
+                select {
+                    margin: 10px 5px;
+                    padding: 15px 15px; 
+                    font-size: 1rem; 
+                    border: 1px solid #ccc; 
+                    border-radius: 4px; 
+                    background-color: #fff; 
+                    color: var(--color-default); 
+                    outline: none;
+                }
+                button {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

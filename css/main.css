@@ -477,6 +477,94 @@ header .nav-container .container .magnifying-glass {
   margin-bottom: 2.5rem;
 }
 
+.about-home {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.about-home .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .about-home .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1650px) {
+  .about-home .container {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+  }
+}
+.about-home .container .section-title h2 {
+  margin: 0;
+}
+.about-home .container .section-title .quote {
+  font-style: italic;
+  font-size: 1.3rem;
+}
+.about-home .container .section-title .ingress {
+  margin-bottom: 20px;
+}
+.about-home .container .call-back-form {
+  margin-top: 80px;
+  box-shadow: 0 4px 10px 10px rgba(0, 0, 0, 0.1);
+  height: 600px;
+  width: 480px;
+}
+@media (min-width: 1650px) {
+  .about-home .container .call-back-form {
+    position: absolute;
+    top: -270;
+    right: 60;
+  }
+}
+.about-home .container .call-back-form .form-header {
+  padding: 5px 15px;
+}
+.about-home .container .call-back-form .form-content {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 10px;
+  padding: 15px 10px;
+}
+.about-home .container .call-back-form .form-content .form-ingress {
+  padding: 0 10px;
+}
+.about-home .container .call-back-form .form-content input {
+  margin: 8px 5px;
+  padding: 15px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  outline: none;
+}
+.about-home .container .call-back-form .form-content input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.about-home .container .call-back-form .form-content select {
+  margin: 10px 5px;
+  padding: 15px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: var(--color-default);
+  outline: none;
+}
+.about-home .container .call-back-form .form-content button {
+  margin-top: 10px;
+}
+
 .services {
   padding-top: 85px;
   padding-bottom: 20px;
@@ -738,4 +826,4 @@ header .nav-container .container .magnifying-glass {
 
 footer .container p {
   padding: 16px 10px;
-}
+}/*# sourceMappingURL=main.css.map */
