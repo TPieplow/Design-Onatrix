@@ -1,0 +1,21 @@
+.ceo-section{
+    padding-top: 120px;
+    display: flex;
+    gap: 40px;
+    .ceo-img{
+        p{
+            margin-top: 10px;
+            font-style: italic;
+        }
+    }
+    .ceo-letter{
+        .ceo-quote{
+                font-style: italic;
+        }
+        .ceo-text{
+            p{
+                margin-top: 30px;
+            }
+        }
+    }
+}

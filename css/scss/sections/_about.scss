@@ -1,0 +1,23 @@
+.about-us{
+    .section-title-area{
+        display: flex;
+        justify-content: space-between;
+        .section-title{
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+            h2{
+                margin-bottom: 10px;
+            }
+            .section-nav{
+                a{
+                    text-decoration: none;
+                }
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+            }
+        }
+    }
+}
