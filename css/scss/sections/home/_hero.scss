@@ -6,6 +6,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            object-fit: cover;
             max-width: 100%;
         }
     }
@@ -17,7 +18,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: left;
-            text-align: flex-start;
+            text-align: center;
             margin-top: 30px;
 
             @include tablet {

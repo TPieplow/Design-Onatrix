@@ -3,7 +3,7 @@ header {
         .container {
             display: grid;
             grid-template-columns: 1fr auto;
-            padding: .7rem 0;
+            padding: .7rem 1.0rem;
             
             @include desktop {
                 display: flex;
@@ -79,7 +79,7 @@ header {
             flex-direction: row;
             padding: 20px 0;
             
-
+            
             
             @include desktop {
                 display: grid;
@@ -101,7 +101,7 @@ header {
                 @include tablet {
                     display: block;
                 }
-
+                
                 @include desktop{
                     display: block;
                 }
@@ -118,7 +118,7 @@ header {
                 top: 1.5rem;
                 right: 1rem;
                 font-size: 1.4em;
-
+                
                 @include tablet {
                     top: 1.7rem;
                     right: -.4rem;

@@ -183,7 +183,7 @@ h6 {
 header .top-header .container {
   display: grid;
   grid-template-columns: 1fr auto;
-  padding: 0.7rem 0;
+  padding: 0.7rem 1rem;
 }
 @media (min-width: 1650px) {
   header .top-header .container {
@@ -530,6 +530,8 @@ footer .container p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
   max-width: 100%;
 }
 .hero .container .hero-content {
@@ -537,7 +539,7 @@ footer .container p {
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  text-align: flex-start;
+  text-align: center;
   margin-top: 30px;
 }
 @media (min-width: 768px) {
@@ -576,6 +578,7 @@ footer .container p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .about-home .container {
@@ -583,12 +586,14 @@ footer .container p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 }
 @media (min-width: 1650px) {
   .about-home .container {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
+    text-align: left;
   }
 }
 .about-home .container .section-title h2 {
@@ -843,6 +848,7 @@ footer .container p {
   position: relative;
   overflow: hidden;
   margin-bottom: 50px;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .our-projects .project-wrapper .project-card {
@@ -850,6 +856,7 @@ footer .container p {
   }
 }
 .our-projects .project-wrapper .project-card img {
+  width: 700px;
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
