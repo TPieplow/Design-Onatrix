@@ -8,12 +8,18 @@
     }
     .team-boxes{
         display: flex;
-        justify-content: center;
-        gap: 25px;
+        flex-wrap: wrap;
+        align-items: center;
         margin-bottom: 50px;
+        justify-content: space-around;
+        @include small-desktop{
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
     .box{
         border: 0.5px solid #EAEAEA;
+        margin-bottom: 50px;
         p{
             margin-left: 15px;
             margin-top: 5px;
@@ -29,7 +35,13 @@
     }
     .team-box-slider{
         display: flex;
-        justify-content: center;
-        gap: 25px;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        @include small-desktop{
+
+            justify-content: space-between;
+        }
     }
 }
