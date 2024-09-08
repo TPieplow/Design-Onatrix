@@ -293,15 +293,95 @@ footer .container p {
   padding: 16px 10px;
 }
 
-.about-us .section-title-area {
-  display: flex;
-  justify-content: space-between;
+.let-us-footer {
+  margin-top: 120px;
+  padding-top: 50px;
 }
-.about-us .section-title-area .section-title {
+.let-us-footer .let-us-know {
+  display: flex;
+  justify-content: center;
+}
+.let-us-footer .let-us-know .contact-portrait {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .let-us-footer .let-us-know .contact-portrait {
+    display: block;
+  }
+}
+.let-us-footer .let-us-know .contact-portrait .dots {
   position: absolute;
-  left: 0;
-  right: 0;
-  text-align: center;
+  top: 35;
+  left: 350;
+}
+.let-us-footer .let-us-know .contact-portrait .green-slope {
+  position: absolute;
+  top: 265;
+}
+.let-us-footer .let-us-know .contact-portrait .portrait {
+  position: relative;
+}
+.let-us-footer .let-us-know .contact-info {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .let-us-footer .let-us-know .contact-info {
+    margin-left: 250px;
+  }
+}
+.let-us-footer .let-us-know .contact-info h2 {
+  margin-bottom: 20px;
+}
+.let-us-footer .let-us-know .contact-info .icon-row {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+.let-us-footer .let-us-know .contact-info .icon-row i {
+  color: var(--color-secondary);
+}
+.let-us-footer .let-us-know .contact-info .icon-row .contact-type {
+  font-size: 14px;
+  font-weight: 600;
+}
+.let-us-footer .let-us-know .contact-info .icon-row .info-row {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.about-us .section-title-area {
+  justify-content: center;
+  display: flex;
+}
+.about-us .section-title-area .right-globe {
+  display: none;
+}
+@media (min-width: 1650px) {
+  .about-us .section-title-area .right-globe {
+    display: block;
+  }
+}
+.about-us .section-title-area .left-globe {
+  display: none;
+}
+@media (min-width: 768px) {
+  .about-us .section-title-area .left-globe {
+    display: block;
+  }
+}
+@media (min-width: 1650px) {
+  .about-us .section-title-area {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768px) {
+  .about-us .section-title-area .section-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
 }
 .about-us .section-title-area .section-title h2 {
   margin-bottom: 10px;
@@ -317,8 +397,21 @@ footer .container p {
 
 .ceo-section {
   padding-top: 120px;
-  display: flex;
   gap: 40px;
+}
+@media (min-width: 1200px) {
+  .ceo-section {
+    display: flex;
+  }
+}
+.ceo-section .ceo-img {
+  text-align: center;
+  margin-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  .ceo-section .ceo-img {
+    margin-bottom: 0px;
+  }
 }
 .ceo-section .ceo-img p {
   margin-top: 10px;
@@ -333,28 +426,50 @@ footer .container p {
 
 .reviews-about-section {
   margin-top: 120px;
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
+  text-align: center;
+}
+@media (min-width: 1650px) {
+  .reviews-about-section {
+    text-align: left;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 .reviews-about-section .section-title {
   margin-top: 50px;
-  margin-right: 0px;
-  width: 35%;
 }
-.reviews-about-section .section-title h2 {
-  margin-top: 0px;
-  max-width: 60%;
+@media (min-width: 1650px) {
+  .reviews-about-section .section-title {
+    margin-right: 0px;
+    width: 38%;
+  }
 }
-.reviews-about-section .section-title .review-text {
-  max-width: 70%;
-  font-style: italic;
+@media (min-width: 1650px) {
+  .reviews-about-section .section-title h2 {
+    margin-top: 0px;
+    max-width: 60%;
+  }
+}
+@media (min-width: 1650px) {
+  .reviews-about-section .section-title .review-text {
+    max-width: 70%;
+    font-style: italic;
+  }
 }
 .reviews-about-section .section-title .rating {
   margin-top: 30px;
 }
 .reviews-about-section .section-title .reviewer {
   margin-top: 30px;
+}
+.reviews-about-section img {
+  display: none;
+}
+@media (min-width: 1650px) {
+  .reviews-about-section img {
+    display: block;
+  }
 }
 
 .team-about-section {
@@ -368,12 +483,20 @@ footer .container p {
 }
 .team-about-section .team-boxes {
   display: flex;
-  justify-content: center;
-  gap: 25px;
+  flex-wrap: wrap;
+  align-items: center;
   margin-bottom: 50px;
+  justify-content: space-around;
+}
+@media (min-width: 1200px) {
+  .team-about-section .team-boxes {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .team-about-section .box {
   border: 0.5px solid #EAEAEA;
+  margin-bottom: 50px;
 }
 .team-about-section .box p {
   margin-left: 15px;
@@ -389,60 +512,48 @@ footer .container p {
 }
 .team-about-section .team-box-slider {
   display: flex;
-  justify-content: center;
-  gap: 25px;
-}
+
 
 .let-us-footer {
   margin-top: 120px;
   padding-top: 50px;
 }
-
 .let-us-footer .let-us-know {
   display: flex;
 }
-
 .let-us-footer .let-us-know .contact-portrait .dots {
   position: absolute;
   top: 35;
   left: 350;
 }
-
 .let-us-footer .let-us-know .contact-portrait .green-slope {
   position: absolute;
   top: 265;
 }
-
 .let-us-footer .let-us-know .contact-portrait .portrait {
   position: relative;
 }
-
 .let-us-footer .let-us-know .contact-info {
   margin-left: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .let-us-footer .let-us-know .contact-info h2 {
   margin-bottom: 20px;
 }
-
 .let-us-footer .let-us-know .contact-info .icon-row {
   display: flex;
   gap: 15px;
   margin-top: 20px;
 }
-
 .let-us-footer .let-us-know .contact-info .icon-row i {
   color: var(--color-secondary);
 }
-
 .let-us-footer .let-us-know .contact-info .icon-row .contact-type {
   font-size: 14px;
   font-weight: 600;
 }
-
 .let-us-footer .let-us-know .contact-info .icon-row .info-row {
   font-style: italic;
   font-size: 14px;
@@ -1098,3 +1209,200 @@ footer .container p {
     gap: 5px;
   }
 }
+.projects {
+  padding-top: 120px;
+}
+@media (min-width: 1200px) {
+  .projects .main-container {
+    display: flex;
+  }
+}
+
+.projects-box {
+  text-align: center;
+  border-bottom: 2px solid #ECECEC;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+@media (min-width: 768px) {
+  .projects-box {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+  }
+}
+.projects-box:last-child {
+  border-bottom: none;
+}
+.projects-box .projects-info {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+.projects-box .projects-info h4 {
+  margin: 0px;
+}
+.projects-box .projects-info .date {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #9C9EA6;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .projects-box .projects-info .date {
+    justify-content: flex-start;
+  }
+}
+.projects-box .projects-info .date i {
+  margin-top: 3px;
+}
+.projects-box .projects-info .read-more-link {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .projects-box .projects-info .read-more-link {
+    justify-content: flex-start;
+  }
+}
+.projects-box .projects-info .read-more-link i {
+  color: var(--color-secondary);
+}
+.projects-box .projects-info .read-more-link a {
+  color: var(--color-default);
+  font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  .side-section {
+    max-width: 25%;
+    margin-left: 50px;
+  }
+}
+.side-section h4 {
+  margin-top: 0px;
+}
+.side-section .tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+.side-section .tags .tag {
+  border-radius: 30px;
+  padding: 15px;
+  border: 1px solid #ECECEC;
+  text-align: center;
+}
+
+.about-footer {
+  padding: 10px 20px;
+  position: relative;
+}
+.about-footer h4 {
+  color: var(--color-accent);
+}
+.about-footer .input-container {
+  position: relative;
+}
+.about-footer .input-container input {
+  margin: 8px 0;
+  padding: 15px 15px;
+  font-size: 1rem;
+  border: 1px solid #ececec;
+  border-radius: 4px;
+  outline: none;
+  z-index: 1;
+  width: 100%;
+}
+.about-footer .input-container input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 5px rgba(66, 73, 70, 0.7);
+}
+.about-footer .input-container i {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: var(--color-primary);
+  font-size: 1.6rem;
+}
+.about-footer .mail-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.projects-details .details-page {
+  display: flex;
+}
+.projects-details .details-page .details-main {
+  border-right: 2px solid #ECECEC;
+  padding-right: 50px;
+}
+.projects-details .details-page .details-main .top-page-date {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #9C9EA6;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .projects-details .details-page .details-main .top-page-date {
+    justify-content: flex-start;
+  }
+}
+.projects-details .details-page .details-main .top-page-date i {
+  margin-top: 3px;
+}
+.projects-details .details-page .details-main .suggestion-list h5 {
+  font-size: 18px;
+}
+.projects-details .details-page .details-main .suggestion-list ul.suggestions {
+  list-style-type: disc;
+  padding-inline: 1ch;
+}
+.projects-details .details-page .details-main .suggestion-list li::marker {
+  color: #5D8C87;
+}
+.projects-details .details-page .details-main .ingress h5 {
+  font-size: 14px;
+}
+.projects-details .details-page .details-main .middle-section {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+}
+.projects-details .details-page .details-main .middle-section h5 {
+  margin: 0px;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.projects-details .details-page .details-main .lower-section h5 {
+  font-size: 18px;
+}
+.projects-details .details-page .details-main .lower-section img {
+  margin-top: 30px;
+}
+.projects-details .details-page .side-section {
+  width: 75%;
+}
+.projects-details .details-page .side-section h4 {
+  margin-bottom: 0px;
+}
+.projects-details .details-page .side-section .projects-box .projects-info {
+  margin-bottom: 0px;
+}
+.projects-details .details-page .side-section .projects-box p {
+  font-size: 14px;
+  font-weight: 600;
+}
+.projects-details .details-page .side-section .projects-box img {
+  width: 50%;
+  height: 60%;
+}/*# sourceMappingURL=main.css.map */

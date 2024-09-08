@@ -3,7 +3,12 @@
     padding-top: 50px;
     .let-us-know{
         display: flex;
+        justify-content: center;
         .contact-portrait{
+            display: none;
+            @include small-desktop{
+                display: block;
+            }
             .dots{
                 position: absolute;
                 top: 35;
@@ -18,10 +23,11 @@
             }
         }
         .contact-info{
-            margin-left: 250px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            @include small-desktop{
+                margin-left: 250px;
+            }
             h2{
                 margin-bottom: 20px;
             }

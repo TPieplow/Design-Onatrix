@@ -1,11 +1,11 @@
-@import './header';
-@import './footer';
+@import './generics/header';
+@import './generics/footer';
+@import './generics/let-us-know';
 
-@import './about';
-@import './ceo-section';
-@import './reviews-about';
-@import './team';
-@import './let-us-know';
+@import './about-us/about';
+@import './about-us/ceo-section';
+@import './about-us/reviews-about';
+@import './about-us/team';
 
 @import './home/hero';
 @import './home/about';
@@ -18,5 +18,8 @@
 @import './services-details/services-details';
 
 @import './contact/contact';
+
+@import './projects/projects-main';
+@import './projects/projects-details';
 
 

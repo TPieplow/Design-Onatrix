@@ -1,0 +1,127 @@
+.projects{
+    padding-top: 120px;
+    .main-container{
+        @include small-desktop{
+            display: flex;
+        }
+    }
+}
+
+.projects-box{
+    text-align: center;
+    @include tablet{
+        display: flex;
+        justify-content: center;
+        text-align: left;
+    }
+    border-bottom: 2px solid #ECECEC;
+    &:last-child{
+        border-bottom: none;
+    }
+    padding-bottom: 20px;
+    padding-top: 20px;
+    .projects-info{
+        margin-left: 20px;
+        margin-bottom: 15px;
+        h4{
+            margin: 0px;
+        }
+        .date{
+            display: flex;
+            justify-content: center;
+            @include tablet{
+                justify-content: flex-start;
+            }
+            gap: 5px;
+            font-size: 14px;
+            color: #9C9EA6;
+            margin-bottom: 15px;
+            i{
+                margin-top: 3px;
+            }
+        }
+        .read-more-link{
+            display: flex;
+            justify-content: center;
+            @include tablet{
+                justify-content: flex-start;
+            }
+            gap: 20px;
+            align-items: center;
+            margin-top: 20px;
+            i{
+                color: var(--color-secondary);
+            }
+            a{
+                color: var(--color-default);
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.side-section{
+    @include small-desktop{
+        max-width: 25%;
+        margin-left: 50px;
+    }
+    h4{
+        margin-top: 0px;
+    }
+    .tags{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 50px;
+        .tag{
+            border-radius: 30px;
+            padding: 15px;
+            border: 1px solid #ECECEC;
+            text-align: center;
+        }
+    }
+}
+
+.about-footer {
+    padding: 10px 20px;
+    position: relative;
+    
+    h4 {
+        color: var(--color-accent);
+    }
+    
+    .input-container {
+        position: relative;
+        
+        input {
+            margin: 8px 0;
+            padding: 15px 15px; 
+            font-size: 1rem; 
+            border: 1px solid #ececec; 
+            border-radius: 4px; 
+            outline: none; 
+            z-index: 1;
+            width: 100%;
+            
+            &:focus {
+                border-color: var(--color-primary); 
+                box-shadow: 0 0 5px rgba(66, 73, 70, 0.7);
+            }
+        }
+        
+        i {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: var(--color-primary);
+            font-size: 1.6rem;
+        }
+    }
+    
+    .mail-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
